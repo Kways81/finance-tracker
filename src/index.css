@@ -1,0 +1,53 @@
+:root {
+  --bg: #0a0a0f;
+  --bg-gradient: radial-gradient(ellipse at top center, #0d1b2e 0%, #0a0a0f 65%);
+  --surface: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.10);
+  --border-hover: rgba(255, 255, 255, 0.20);
+  --text-primary: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.50);
+  --text-faint: rgba(255, 255, 255, 0.30);
+  --accent: #7dd3fc;
+  --green: #4ade80;
+  --red: #f87171;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+  --font: 'Outfit', sans-serif;
+}
+
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+input, select, button { 
+  font-family: var(--font); 
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #0a0a0f inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+#root {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
