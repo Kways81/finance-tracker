@@ -58,7 +58,7 @@ export default function SpendingChart({ transactions }) {
                   borderRadius: '12px',
                   color: '#ffffff'
                 }}
-                formatter={(value) => [`$${value}`, 'Amount']}
+                formatter={(value) => [`£${value}`, 'Amount']}
               />
               <Area 
                 type="monotone" 

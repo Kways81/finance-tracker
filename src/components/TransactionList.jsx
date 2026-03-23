@@ -11,7 +11,7 @@ export default function TransactionList({ transactions, onDeleteTransaction }) {
 
   const formatAmount = (amount, type) => {
     const formatted = parseFloat(amount).toFixed(2)
-    return type === 'income' ? `+$${formatted}` : `-$${formatted}`
+    return type === 'income' ? `+£${formatted}` : `-£${formatted}`
   }
 
   if (transactions.length === 0) {

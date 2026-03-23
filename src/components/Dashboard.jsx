@@ -17,21 +17,21 @@ export default function Dashboard({ transactions }) {
         <div className="stat-card">
           <h3>Total Balance</h3>
           <p className={`amount ${balance >= 0 ? 'positive' : 'negative'}`}>
-            ${balance.toFixed(2)}
+            £{balance.toFixed(2)}
           </p>
         </div>
         
         <div className="stat-card">
           <h3>Total Income</h3>
           <p className="amount positive">
-            ${totalIncome.toFixed(2)}
+            £{totalIncome.toFixed(2)}
           </p>
         </div>
         
         <div className="stat-card">
           <h3>Total Expenses</h3>
           <p className="amount negative">
-            ${totalExpenses.toFixed(2)}
+            £{totalExpenses.toFixed(2)}
           </p>
         </div>
       </div>
